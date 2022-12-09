@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            /* Inserati un element HTML. Formatati elementul astfel incat sa se aplice 3 proprietati CSS. La intrarea cu mouse-ul peste 
+            element sa se schimbe tipul elementului in radio, iar la iesirea mouseu-ului sa se transforme in number.*/
+
+            function change1(){
+                document.getElementById("txt").type="radio";
+            }
+
+            function change2(){
+                document.getElementById("txt").type="number";
+            }
+
+            
+        </script>
+
+        <style>
+            #txt{
+                box-shadow: 6px 6px 6px blue;
+                border-width: 5px 5px 5px 5px;
+                border-color: red;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        Element de input: <input type="text" id="txt" onmouseover="change1()" onmouseout="change2()">
+
+    </body>
+</html>

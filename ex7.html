@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            /*Dezvoltati o pagina web cu facilitati JS care afiseaza ora curenta (hh:mm:ss), actualizand o data pe secunda
+            (folosind obiectul de tip Date, apel repetat de cod prin setInterval sau setTimeOut)
+
+            1 secunda = 1000 milisecunde
+
+            setTimeOut = apeleaza o functie dupa un anumit numar de milisecunde O SINGURA DATA
+            setTimeOut(functie, nr.milisecunde)
+
+            setInterval = apeleaza o functie la intervale specificate (in milisecunde)
+            setInterval(functie, nr.milisecunde)
+            
+            */
+
+
+            function timer(){
+                const d = new Date();
+                document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+            }
+
+           setInterval(timer,1000);  //setInterval(functie, intervalul dupa care se repeta IN MILISECUNDE)
+          
+
+        </script>
+
+    </head>
+
+    <body>
+        <div id="demo"></div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #txt{
+                font-weight: bold;
+            }
+        </style>
+    </head>
+
+    <body>
+        <input type="text"  id="txt" name="text" size="20" maxlength="30" onblur="afiseaza()">
+
+        <script>
+            function afiseaza(){
+                alert("Valoarea introdusa: " + document.getElementById("txt").value);
+            }
+        </script>
+    </body>
+</html>
+

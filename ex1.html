@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            /* 
+            Sa se adauge 2 butoane. In momentul in care dati click pe primul buton, sa se adauge un formular cu 2 elemente de input
+            In momentul in care dati click pe al doilea buton, sa se stearga formularul. Formatati formularul a.i. sa se aplice 2 formatari CSS
+            */
+
+            function initializare(){
+                locatie=document.getElementById("demo")
+            }
+
+            function insereaza(){
+                formular="<form action='script.php' method='post'> Nume: <input type='text' style='font-weight: bold' name='nume'></br> Prenume: <input type='text' style='text-decoration: underline' name='prenume'></form>"
+                locatie.innerHTML=formular
+            }
+
+            function ascunde(){
+                locatie.innerHTML=""
+            }
+        </script>
+
+        
+
+    </head>
+
+    <body onload="initializare()">
+        <div id="demo"></div>
+        <button onclick="insereaza()">Inserare</button>
+        <button onclick="ascunde()">Stergere</button>
+
+    </body>
+</html>

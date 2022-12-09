@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Problema 1
+        </title>
+    </head>
+    <body>
+
+        <a href="https://www.google.ro/" id="link" onmouseover="schimba()" onmouseout="schimba1()">
+            Acest link duce la Google
+        </a>
+
+        <script>
+            function schimba(){
+                document.getElementById("link").innerHTML="Cursorul este pe link";
+            }
+
+            function schimba1(){
+                document.getElementById("link").innerHTML="Cursorul este in afara";
+                document.getElementById("link").style.borderWidth="10px";
+            }
+        </script>
+    </body>
+
+</html>

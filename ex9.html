@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            /*Inserati un text de bun venit cu un mesaj (Buna ziua!) daca este dimineata, respectiv alt mesaj (Buna seara) daca
+            este seara. Textul va fi formatat cu fontul Georgia, dimensiune 15px, se va formata cu italic si isi va schimba alinierea
+            centrat*/
+
+            function afiseaza(){
+                const time1 = new Date();
+                const time2 = new Date();
+                time2.setHours(17,0,0,0);
+
+                if(time1.getTime() <= time2.getTime()){
+                    document.getElementById("txt").innerHTML = "Buna ziua!";
+                }
+                else {document.getElementById("txt").innerHTML = "Buna seara!";}
+
+                
+            }
+        </script>
+
+        <style>
+            #txt{
+                font-family: Georgia;
+                font-size: 15px;
+                font-style: italic;
+                text-align: center;
+            }
+        </style>
+
+    </head>
+
+    <body onload="afiseaza()">
+        <p id="txt"></p>
+
+    </body>
+</html>

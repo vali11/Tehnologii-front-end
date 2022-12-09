@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    div {
+      border: 1px solid black;
+      background-color: lightblue;
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      
+
+    }
+  </style>
+  <script>
+    function bar() {
+      return a;
+      a = 20;
+      function a() { }
+      var a = '22';
+    }
+    alert(typeof bar());
+
+  </script>
+</head>
+
+<body onload="">
+
+
+  <div></div>
+
+</body>
+
+</html>

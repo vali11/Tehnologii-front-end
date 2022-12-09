@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            /*Creati doua textbox-uri care au culoarea de fundal verde si un link. In momentul in care se da click dreapta pe link, cele
+            doua textbox-uri primesc valoarea 'abc'*/
+
+            function change(){
+                document.getElementsByClassName("textbox")[0].value="abc";
+                document.getElementsByClassName("textbox")[1].value="abc";
+                return false;
+            }
+        </script>
+
+        <style>
+            .textbox{
+                background-color: green;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <p>Textbox1: <input type="text" class="textbox" name="t1" size="25"></p>
+        <p>Textbox2: <input type="text" class="textbox" name="t2" size="25"></p>
+        <a href="https://www.google.ro/" id="link" oncontextmenu="return change()">Acest link duce la Google</a>
+
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body onload="initializare()">
+        <ul>
+            <li class="element">Element 1</li>
+            <li class="element">Element 2</li>
+            <li class="element">Element 3</li>
+            <li class="element">Element 4</li>
+            <li class="element">Element 5</li>
+            <li class="element">Element 6</li>
+        </ul>
+
+        <script>
+            function initializare(){
+                 document.getElementsByClassName("element")=elemente;
+                   
+            }
+
+            function hide(){
+                i=0;
+                elemente[i].style.display=none;
+                i++;
+            }
+
+            function hide2(){
+                i=0;
+                elemente[i].onclick=hide;
+                i++;
+            }
+        </script>
+    </body>
+</html>

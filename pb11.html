@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <a href="https://www.google.ro/" id="link" onmouseover="schimba1()" onmouseout="schimba2()">Acest link duce la Google</a>
+
+        <script>
+            function schimba1(){
+                document.getElementById("link").style.fontWeight="bold"
+                document.getElementById("link").style.textDecoration="underline"
+            }
+
+            function schimba2(){
+                document.getElementById("link").style.fontWeight="normal"
+                document.getElementById("link").style.textDecoration="none"
+            }
+        </script>
+    </body>
+</html>

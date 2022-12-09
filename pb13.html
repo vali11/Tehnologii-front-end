@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .txt{
+                border-width: 2px;
+                border-style: dotted;
+                border-color: blue;
+            }
+        </style>
+
+        <script>
+            function afiseaza(){
+                document.getElementsByClassName("txt")[1].value = document.getElementsByClassName[0].value;
+            }
+        </script>
+    </head>
+
+    <body>
+        <form action="script.php">
+        Nume: <input type="text" name="nume" class="txt" size="25" maxlength="50" onblur="afiseaza()"></br>
+        Prenume: <input type="text" name="prenume" class="txt" size="25" maxlength="50">
+        </form>
+
+    </body>
+</html>

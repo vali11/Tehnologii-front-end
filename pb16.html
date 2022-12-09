@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #txt{
+                font-family: Verdana;
+                text-align: center;
+            }
+        </style>
+
+        <script>
+            function change1(){
+                document.getElementById("txt").innerHTML="Cursorul este pe element"
+            }
+
+            function change2(){
+                document.getElementById("txt").innerHTML="Cursorul este in afara"
+            }
+        </script>
+
+
+
+    </head>
+
+    <body>
+        <div id="txt" onmouseover="change1()" onmouseout="change2()">Element de tip block</div>
+    </body>
+</html>

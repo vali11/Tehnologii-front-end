@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function schimba(){
+                if(document.getElementsByTagName("span")[0].style.display="inline"){
+                    document.getElementsByTagName("span")[0].style.display="block";
+                }
+                else document.getElementsByTagName("span")[0].style.display="inline";
+            }
+        </script>
+    </head>
+
+
+    <body>
+        <p>Acesta este un text oarecare <br> cu un cuvant <span onclick="schimba()">special</span></p>
+
+    </body>
+</html>

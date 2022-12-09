@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #poza{
+                border-radius: 20px;
+            }
+        </style>
+
+        <script>
+            //function initializeaza(){
+                //foto = document.getElementById("poza")
+            //}
+            function change1(){
+                document.getElementById("poza").src = "caine.jpg";
+            }
+
+            function change2(){
+                document.getElementById("poza").src = "pisica.jpg";
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <img src="pisica.jpg" id="poza" width="200px" height="200px" onmousedown="change1()"  onmouseup="change2()" alt="Poza cu efect de rollover">
+
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <form name="formular" action="script.php" method="post" onsubmit="return validare()">
+        <input type="text" name="nume" size="50">
+        <input type="submit" name="trimite" value="Trimite">
+    </form>
+    <script>
+        function validare() {
+            if (document.forms["formular"]["nume"].value == "") {
+                alert("Obligatoriu de completat");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

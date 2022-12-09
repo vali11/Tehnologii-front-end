@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            /* Sa se insereze un element HTML. Formatati elementul a.i. sa aiba imagine de fundal. La intrarea cu mouse-ul peste element
+            sa apara o alta imagine de fundal, iar la iesirea mouse-ului sa apara imaginea initiala*/
+
+            function change1(){
+                document.getElementById("elem").style.backgroundImage = "url('caine.jpg')"
+            }
+
+            function change2(){
+                document.getElementById("elem").style.backgroundImage = "url('pisica.jpg')"
+            }
+        </script>
+
+        <style>
+            #elem{
+                height: 200px;
+                width: 200px;
+                background-image: url("pisica.jpg");
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div id="elem" onmouseover="change1()" onmouseout="change2()">Acesta este un div</div>
+
+    </body>
+</html>
+    

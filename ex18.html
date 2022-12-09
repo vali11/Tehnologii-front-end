@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            /*Dezvoltati o pagina web cu facilitati JS care detecteaza si afiseaza 3 metode window. Fiecare caracteristica va fi
+            formatata in stil diferit cu hsla. Cand mouse-ul este deasupra componentei, aceasta este colorata cu magenta*/
+
+            let myWindow;
+
+            function coloreaza1(){
+                document.getElementById("p1").style.color="magenta";
+            }
+            function coloreaza2(){
+                document.getElementById("p2").style.color="magenta";
+            }
+            function coloreaza3(){
+                document.getElementById("p3").style.color="magenta";
+            }
+
+            function schimba1(){
+                alert("Buna ziua!");
+            }
+
+            function schimba2(){
+                myWindow.close();
+            }
+
+            function schimba3(){
+                myWindow=window.open("https://www.google.ro/","_blank");
+            }
+        </script>
+
+        <style>
+            #p1{
+                color: hsla(120,100%,75%,0.3);
+            }
+            #p2{
+                color: hsla(120,100%,50%,0.3);
+            }
+            #p3{
+                color: hsla(120,100%,25%,0.3);
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <p id="p1" onmouseover="coloreaza1()" onclick="schimba1()">Da click pe mine pentru alerta</p><br>
+        <p id="p2" onmouseover="coloreaza2()" onclick="schimba2()">Da click pe mine pentru a inchide pagina</p><br>
+        <p id="p3" onmouseover="coloreaza3()" onclick="schimba3()">Da click pe mine pentru a deschide pagina catre google</p>
+
+    </body>
+</html>

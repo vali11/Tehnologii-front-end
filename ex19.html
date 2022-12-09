@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #div1{
+                background-color: #FF0000;
+            }
+            #div2{
+                background-color: #0000FF;
+            }
+            #div3{
+                background-color: #00FF00;
+            }
+            div{
+                width: 200px;
+                height: 200px;
+                display:inline-block;
+            }
+        </style>
+
+        <script>
+            function afiseaza1(){
+                document.getElementById("locatie").innerHTML="#FF0000";
+                document.getElementById("locatie").style.color="#FF0000";
+            }
+            function afiseaza2(){
+                document.getElementById("locatie").innerHTML="#0000FF";
+                document.getElementById("locatie").style.color="#0000FF";
+            }
+            function afiseaza3(){
+                document.getElementById("locatie").innerHTML="#00FF00";
+                document.getElementById("locatie").style.color="#00FF00";
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <div id="div1" onmouseover="afiseaza1()"></div>
+        <div id="div2" onmouseover="afiseaza2()"></div>
+        <div id="div3" onmouseover="afiseaza3()"></div>
+        <br>
+        <br>
+        <p id="locatie"></p>
+    </body>
+</html>

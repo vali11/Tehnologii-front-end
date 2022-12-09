@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            /*Inserati paragraful ”Scadenta este” si un buton. In momentul in care se da click pe buton sa se afiseze data
+            scadentei la 15 zile de la ziua de azi colorate in SlateBlue*/
+
+            function calculeaza(){
+                const a = new Date();
+                a.setDate(a.getDate()+15);
+                document.getElementById("demo").innerHTML=a.toDateString();
+            }
+
+        </script>
+
+        <style>
+            span{
+                color: slateblue;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <p>Scadenta este: <span id="demo"></span></p>
+        <button onclick="calculeaza()">Calculeaza scadenta</button>
+
+    </body>
+</html>

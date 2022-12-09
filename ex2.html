@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .buton{
+                margin: 0.5em;
+                position: relative;
+                left: -0.5em;
+            }
+        </style>
+
+    </head>
+
+    <body onload="initializare()">  
+        <input type="radio" class="buton" name="camera" value="single">Camera single<br>
+        <input type="radio" class="buton" name="camera" value="dubla">Camera dubla<br>
+        <input type="radio" class="buton" name="camera" value="apartament">Apartament<br>
+
+        <button ondblclick="selecteaza()">Dublu click</button>
+
+        <script>
+            /*
+            Adaugati 3 elemente de input si un element HTML. Adaugati la butoanele radio o formatare din CSS care sa contina 3 proprietati.
+            Cand se da dubluclick pe elementul HTML, sa se selecteze pe rand butoanele radio.
+            */
+
+            function initializare(){
+                campuri=document.getElementsByClassName("buton")
+                i=0
+            }
+
+            function selecteaza(){
+                campuri[i].click()
+                i++
+                if(i==campuri.length)
+                    i=0
+            }
+        </script>
+
+
+    </body>
+</html>

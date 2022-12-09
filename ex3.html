@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            /*Sa se insereze un element HTML. Formatati elementul astfel incat sa aiba o imagine de fundal. La click dreapta pe element 
+            sa apara in cadrul elementului o alta imagine de fundal, iar la iesirea cursorului de pe element sa se pune o culoare de fundal*/
+
+            function change1(){
+                document.getElementById("elem").style.backgroundImage = "url('caine.jpg')";
+                return false;
+            }
+
+            function change2(){
+                document.getElementById("elem").style.backgroundImage = "none";
+                document.getElementById("elem").style.backgroundColor = "blue";
+            }
+        </script>
+
+        <style>
+            #elem{
+                height: 200px;
+                width: 200px;
+                background-image: url("pisica.jpg");
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div id="elem" oncontextmenu="return change1()" onmouseout="change2()">Acesta este elementul HTML</div>
+
+    </body>
+</html>

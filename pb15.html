@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            li{
+                list-style-type: none;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+        <ol>
+            <li ondblclick="ascunde(this)" value="1">Element 1</li>
+            <li ondblclick="ascunde(this)" value="2">Element 2</li>
+            <li ondblclick="ascunde(this)" value="3">Element 3</li>
+            <li ondblclick="ascunde(this)" value="4">Element 4</li>
+            <li ondblclick="ascunde(this)" value="5">Element 5</li>
+        </ol>
+
+        <script>
+            function ascunde(a){
+                a.style.display="none";
+                alert(a.value);
+            }
+        </script>
+    </body>
+</html>

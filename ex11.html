@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            /*Sa se afiseze un mesaj de alerta dupa 30 zile dupa ce s-a dat submit la formular
+            30 zile = 30*24 ore = 720 ore
+            720 ore = 720*60 minute = 43200 minute
+            43200 minute = 43200*60 ssecunde = 2.592.000 secunde
+            2.592.000*1000 = 2592000000 milisecunde
+            */
+            var timeout;
+
+            function mesaj(){
+                timeout=setTimeout(alertMesaj, 2592000000);
+                return false;
+            }
+
+            function alertMesaj(){
+                alert("Au trecut 30 de zile!");
+
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <form action="script.php" method="post" onsubmit="return mesaj()">
+            Nume: <input type="text" name="nume" size="25" maxlength="50"><br>
+            Parola: <input type="password" name="parola" size="25"><br>
+            <input type="submit" value="submit">
+        </form>
+
+    </body>
+</html>

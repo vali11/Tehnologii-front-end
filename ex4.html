@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            /* Inserati un text cu opacitate de 0,25. Acesta primeste o umbra si va fi scris cu fontul propriu definit in momentul in care
+            se da click dreapta pe un buton*/
+
+            function change(){
+                document.getElementById("txt").style.textShadow = "5px 5px 5px";
+                document.getElementById("txt").style.fontFamily = "Verdana";
+                return false;
+            }
+
+        </script>
+
+        <style>
+            #txt{
+                opacity: 0.25;
+            }
+        </style>
+
+    </head>
+
+
+    <body>
+        <p id="txt">Acesta este textul</p>
+        <button oncontextmenu="return change()">Apasa aici</button>
+
+    </body>
+</html>

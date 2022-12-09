@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rezolvare Problema 30</title>
+    <script>
+        /*Inserati un div de dimensiune 200px pe 200px.
+        In momentul in care se da click pe el sa se mute din
+        coltul stanga sus in coltul dreapta sus.
+        In momentul in care se mai da un click pe el sa revina
+        in coltul stanga sus.
+        */
+        function schimbaPozitie(div) {
+            if (div.style.textAlign == "left") {
+                div.style.textAlign = "right";
+            }
+            else
+                div.style.textAlign = "left";
+        }
+    </script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            text-align: left;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div onclick="schimbaPozitie(this)">Acesta este div-ul.</div>
+</body>
+
+</html>

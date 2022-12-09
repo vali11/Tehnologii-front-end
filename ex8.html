@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        a{
+            display: block;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: green;
+        }
+        
+    </style>
+
+    <script>
+        /* 
+
+        Cerinta: Creati un meniu de navigare vertical care are 4 optiuni: Home, News, Contact, About. Formatati meniul in stil propriu
+        folosind afisarea legaturilor ca a:hover, respectiv a:active. Pe optiunea News sa apara: noutatea zilei sau noutatea serii in
+        functie de momentul zilei (inainte sau dupa ora 18)
+
+        :link = link nevizitat
+        :visted = link vizitat
+        :hover = cand trecem cu mouse-ul peste element
+        :active = cand se da click pe link
+
+        !!! Trebuie sa apara in ordinea asta si se pot folosi pe orice element, nu doar pe linkuri
+        */
+
+        function afisare(){
+
+            const date1 = new Date();
+            const date2 = new Date();
+            date2.setHours(18,0,0,0);
+
+            if(date1.getTime() === date2.getTime())
+                {document.getElementById("news").innerHTML = "News - sectiunea se actualizeaza";}
+            else if(date1.getTime() < date2.getTime()){
+                document.getElementById("news").innerHTML = "News - noutatea zilei";
+            }
+                else {document.getElementById("news").innerHTML = "News - noutatea serii";}
+
+
+                 
+        }
+    </script>
+</head>
+
+<body onload="afisare()">
+    <nav>
+        <a href="#">Sectiunea 1</a>
+        <a href="#">Sectiunea 2</a>
+        <a href="#">Sectiunea 3</a>
+    </nav>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" id="news">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</body>
+
+</html>

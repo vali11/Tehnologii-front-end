@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #aric{
+            color:hsla(125, 30%, 30% 0.2);
+
+        }
+        #metrip{
+            color:hsla(125, 50%, 50% 0.7)
+        }
+    </style>
+    <script>
+        function calculeaza(){
+            var lungime = document.getElementById("lungime").value;
+            var latime = document.getElementById("latime").value;
+            var metri = lungime * latime;
+            var ari = metri / 100;
+
+            document.getElementById("aric").textContent = ari.toString() + " arii";
+            document.getElementById("metrip").textContent = metri.toString() + " metri patrati";
+
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <form action="script.php" onsubmit="return calculeaza()">
+        <legend>Dimensiunile terenului</legend>
+       Lungime: <input type="number" name="lungime" id="lungime"><br>
+       Latime: <input type="number" name="latime" id="latime"><br>
+       <input type="submit" value="Apasa"> 
+       <p id="aric"></p>
+       <p id="metrip"></p>
+    </form>
+</body>
+</html>

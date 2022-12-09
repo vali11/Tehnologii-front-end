@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        /* Inserati un formular care contine o lista derulanta si o formatare css care sa centreze textul, sa puna liniuta de subliniere si
+        sa il scrie cu litere mari. In cazul in care se modifica elementul selectat din lista, sa se afiseze valoarea selectata intr-un div
+        si intr-un mesaj de alerta*/
+        function afiseaza(a) {
+            document.getElementById("demo").innerHTML = a.value;
+            alert(a.value);
+        }
+
+    </script>
+
+    <style>
+        #lista {
+            text-align: center;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <form action="script.php" method="post">
+        <select id="lista" onchange="afiseaza(this)">
+            <option value="Optiunea 1">Optiunea 1</option>
+            <option value="Optiunea 2">Optiunea 2</option>
+            <option value="Optiunea 3">Optiunea 3</option>
+        </select>
+    </form>
+
+    <div id="demo"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .parola{
+                background-color: yellow;
+            }
+        </style>
+
+        <script>
+            function modifica(){
+                document.getElementsByClassName("parola")[0].value = "merge";
+                document.getElementsByClassName("parola")[1].value = "merge";
+                return false;
+
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <p>Parola 1: <input type="password" class="parola" name="parola1" size="25"></p>
+        <p>Parola 2: <input type="password" class="parola" name="parola2" size="25"></p>
+        <button oncontextmenu="return modifica()">Click</button>
+    </body>
+</html>
